@@ -1,12 +1,12 @@
 name: Cloud check in action
 on:
+ workflow_dispatch:
   push:
     branches:
       - main
       - dev
   watch:
     types: started
-  workflow_dispatch:
   schedule:
     - cron: 35 3 * * *
 jobs:
